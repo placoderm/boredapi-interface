@@ -41,7 +41,7 @@ function getSuggestion() {
   document.getElementById("icon").src = `./images/null.png`;
   document.getElementById("link").textContent = "";
   spinner.innerHTML = "<img height='50px' src='./images/Gear-0.5s-91px.gif'>";
-  const API = new FetchWrapper("http://www.boredapi.com/api/");
+  const API = new FetchWrapper("https://www.boredapi.com/api/");
   let parameters = `?type=${type}`;
   solo ? (parameters += "&participants=1") : (parameters += "&participants=");
   free ? (parameters += "&price=0") : (parameters += "&price=");
