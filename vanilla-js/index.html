@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Boredom!</title>
+    <link rel="stylesheet" href="vApp.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+<body>
+    <div class="App">
+        <div class="card">
+            <div class="card-content">
+                <div class="advice-area">
+                    <div class="img-area">
+                        <img id="icon" class="icon" src="./images/all.png" alt="icon" />
+                    </div>
+                    <div id="advice-type"></div>
+                    <div id="spinner"></div>
+                    <div id="advice">Click below to remove boredom</div>
+                    <div class="link">
+                        <a id="link" target="_blank" rel="noreferrer"></a>
+                    </div>
+                </div>
+                <form>
+                    <select id="types"></select>
+                    <label for="number">
+                        <input type="checkbox" id="number" name="number" value="solo" unchecked />
+                        Solo activites only
+                    </label>
+                    <label for="cost">
+                        <input type="checkbox" id="cost" name="cost" value="free" />
+                        Free activites only
+                    </label>
+                </form>
+            </div>
+        </div>
+        <button id="remove-boredom-button">
+            Remove Boredom!
+        </button>
+        <div id="credits">
+            Credits
+            <div class="dropdown-content">
+                <p>This app makes use of <a href="https://www.boredapi.com/" target="_blank" rel="noreferrer">The Bored
+                        API</a></p>
+                <p>Many thanks to Jad Joubran for his wonderful <a href="https://learnjavascript.online/"
+                        target="_blank" rel="noreferrer">Learn Javascript</a> and <a href="https://react-tutorial.app/"
+                        target="_blank" rel="noreferrer">React Tutorial</a> courses. </p>
+                <p>Icons are from <a href="https://NounProject.com" target="_blank" rel="noreferrer">NounProject.com</a>
+                </p>
+                <ul>
+                    <li>Education by Rockicon</li>
+                    <li>Recreation by Massupa Kaewgahya</li>
+                    <li>Group by Angie Reyes</li>
+                    <li>Diy by Ian Rahmadi Kurniawan</li>
+                    <li>Charity by hafiudin</li>
+                    <li>Cooking by Arif Arif</li>
+                    <li>Relaxation by Lars Meiertoberens</li>
+                    <li>Music by Bernd Lakenbrink</li>
+                    <li>Man Push The Stone by Berkah Icon</li>
+                    <li>Hobbies by WiStudio</li>
+                </ul>
+                <p>Spinner from <a href="https://loading.io" target="_blank" rel="noreferrer"> https://loading.io</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./vApp.js"></script>
+</body>
+
+</html>
