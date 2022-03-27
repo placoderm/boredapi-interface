@@ -1,5 +1,5 @@
-import activityDropDown from "./activityDropDown.js";
-
+import activityDropDown from "./activityDropDown";
+import css from "../public/style.css";
 let type = "";
 
 const adviceText = document.getElementById("advice");
@@ -31,7 +31,7 @@ class FetchWrapper {
     this.baseURL = baseURL;
   }
   get(endpoint) {
-    return fetch(this.baseURL + endpoint).then(response => response.json());
+    return fetch(this.baseURL + endpoint).then((response) => response.json());
   }
 }
 
@@ -46,7 +46,7 @@ function getSuggestion() {
   solo ? (parameters += "&participants=1") : (parameters += "&participants=");
   free ? (parameters += "&price=0") : (parameters += "&price=");
   console.log(parameters);
-  API.get("activity" + parameters).then(data => {
+  API.get("activity" + parameters).then((data) => {
     document.getElementById("icon").src = `./images/${data.type}.png`;
     adviceText.textContent = data.activity;
     adviceTypeText.textContent = data.type;
